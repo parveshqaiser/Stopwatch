@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(183, 163, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    color: rgb(36, 28, 28);
+    text-shadow: 10px 10px 10px grey;
+}
+.digit{
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+button{
+    font-size: x-large;
+    color: wheat;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+button:hover{
+    transform: scale(0.7);
+ }
+
+.start{
+    background-color: rgb(25, 60, 25);
+}
+
+.stop{
+    background-color: rgb(194, 33, 33);
+}
+
+.reset{
+    background-color: rgb(214, 145, 16);
+}

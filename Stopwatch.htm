@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+    <script src="index.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(231, 225, 225);
+        }
+        .container{
+            text-align: center;
+            padding: 25px;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 20xp 20px 20px #d9d9d9, -20px -20px 60px #ffffff;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #display{
+            font-size: 48px;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: inset 20px 20px 20px #d9d9d9,
+            inset -20px -20px 60px #ffffff;
+            color: grey;
+        }
+        button{
+            font-size: 24px;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+            /* outline: none; */
+            cursor: pointer;
+            /* color: blueviolet; */
+            /* box-shadow: inset 20px 20px 20px #d9d9d9,
+            inset -20px -20px 60px #ffffff;
+            transition: all 0.2s ease-in-out; */
+        }
+        button:hover{
+           transform: scale(0.8);
+
+        }
+        .start{
+            background-color: green;
+        }
+        .stop{
+            background-color: red;
+        }
+        .reset{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- this file is only for design purpose.. -->
+        <h2>StopWatch</h2>
+        <div id="display">00 : 00 : 00</div>
+        <div id="ok"></div>
+        <button class="start" onclick="StartClick()">Start</button>
+        <button class="stop" onclick="StopClick()">Stop</button>
+        <button class="reset" onclick="ResetClick()">Reset</button>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> StopWatch</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- this is the main file  -->
+    <body>
+<!-- backdrop-filter: blur(0px); -->
+ <!--learnt new thing   -->
+        <div class="container">
+            <div class="time">
+                <span class="digit" id="hr">00</span>
+                <span class="">HR</span>
+                <span class="digit" id="min">00</span>
+                <span>Min</span>
+                <span class="digit" id="sec">00</span>
+                <span>Sec</span>
+                <span class="digit" id="count">00</span>
+                <span id="count">Millisecond</span>
+            </div>
+            
+            <div class="btn">
+                <button class="start" id="start" onclick="StartClick()">Start</button>
+                <button class="stop" id="stop" onclick="StopClick()">Stop</button>
+                <button class="reset" onclick="ResetClick()">Reset</button>
+            </div>
+        </div>
+    </body>
+</html>
